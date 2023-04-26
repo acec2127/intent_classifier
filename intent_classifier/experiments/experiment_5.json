@@ -1,0 +1,27 @@
+{   
+    "details":{
+        "experiment" : 5,
+        "dataset" : "meld_e"
+    },
+    
+    "model_head":{
+        "num_layers" : 2,
+        "num_heads" : 4,
+        "num_channels" : 256,
+        "widening_factor" : 1,
+        "dropout" : 0.1
+    },
+
+    "optimizer":{
+        "max_lr" : 5e-5,
+        "pct_start" : 0.2,
+        "div_factor" : 25,
+        "final_div_factor" : 1e3
+    },
+
+    "dataloader":{
+        "batch_size" : 16,
+        "n_epoch" : 40,
+        "num_epoch_record" : 10
+    }
+}
